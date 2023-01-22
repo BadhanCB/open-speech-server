@@ -16,7 +16,7 @@ router.get("/get/:id", async (req, res) => {
 });
 
 //update
-router.put("/update/:id", async (req, res) => {
+router.patch("/update/:id", async (req, res) => {
     if (req.body.userID === req.params.id) {
         //encrypt user password
         if (req.body.password) {
